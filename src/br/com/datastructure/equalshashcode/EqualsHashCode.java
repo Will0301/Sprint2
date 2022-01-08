@@ -1,4 +1,4 @@
-package datastructure.equalshashcode;
+package br.com.datastructure.equalshashcode;
 
 import java.util.HashSet;
 import java.util.Set;

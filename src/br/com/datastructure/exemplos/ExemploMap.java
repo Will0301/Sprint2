@@ -1,4 +1,4 @@
-package datastructure.exemplos;
+package br.com.datastructure.exemplos;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

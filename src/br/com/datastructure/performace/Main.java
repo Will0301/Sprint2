@@ -1,4 +1,4 @@
-package datastructure.performace;
+package br.com.datastructure.performace;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,104 +1,104 @@
-package datastructure.performace;
+package br.com.datastructure.performace;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class PerformaceMap {
+public class PerformaceSet {
 
-    static Map<Integer, Integer> hashMap = new HashMap<>();
-    static Map<Integer, Integer> treeMap = new TreeMap<>();
-    static Map<Integer, Integer> linkedHashMap = new LinkedHashMap<>();
+    static Set<Integer> hashSet = new HashSet<>();
+    static Set<Integer> treeSet = new TreeSet<>();
+    static Set<Integer> linkedHashSet = new LinkedHashSet<>();
 
     public static void main(String[] args) {
         long tempoInicial;
         long tempoFinal;
 
         for (int i = 0; i < 1000000; i++) {
-            hashMap.put(i, i*2);
-            treeMap.put(i, i*2);
-            linkedHashMap.put(i, i*2);
+            hashSet.add(i);
+            treeSet.add(i);
+            linkedHashSet.add(i);
         }
 
         tempoInicial = System.nanoTime();
-        hashMap.put(2, 968);
+        hashSet.add(50000);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para adição de elemento em HashMap");
+        System.out.println(" Tempo para adição de elemento em HashSet");
 
         tempoInicial = System.nanoTime();
-        treeMap.put(2, 968);
+        treeSet.add(50000);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para adição de elemento em treeMap");
+        System.out.println(" Tempo para adição de elemento em TreeSet");
 
         tempoInicial = System.nanoTime();
-        linkedHashMap.put(2, 968);
+        linkedHashSet.add(50000);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para adição de elemento em LinkedHashMap");
+        System.out.println(" Tempo para adição de elemento em LinkedHashSet");
 
         System.out.println();
 
         tempoInicial = System.nanoTime();
-        hashMap.remove(800000, 800000);
+        hashSet.remove(584521);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de elemento em HashMap");
+        System.out.println(" Tempo para remoção de elemento em HashSet");
 
         tempoInicial = System.nanoTime();
-        treeMap.remove(800000, 800000);
+        treeSet.remove(584521);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de elemento em TreeMap");
+        System.out.println(" Tempo para remoção de elemento em TreeSet");
 
         tempoInicial = System.nanoTime();
-        linkedHashMap.remove(800000, 800000);
+        linkedHashSet.remove(584521);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de elemento em LinkedHashMap");
+        System.out.println(" Tempo para remoção de elemento em LinkedHashSet");
 
         System.out.println();
 
         tempoInicial = System.nanoTime();
-        hashMap.get(200000);
+        hashSet.contains(521451);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para buscar elemento em HashMap");
+        System.out.println(" Tempo para verificar se possuí um elemento em HashSet");
 
         tempoInicial = System.nanoTime();
-        treeMap.get(200000);
+        hashSet.contains(521451);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para buscar elemento em TreeMap");
+        System.out.println(" Tempo para verificar se possuí um elemento em TreeSet");
 
         tempoInicial = System.nanoTime();
-        linkedHashMap.get(200000);
+        hashSet.contains(521451);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para buscar elemento em LinkedHashMap");
-
+        System.out.println(" Tempo para verificar se possuí um elemento em LinkedHashSet");
 
         System.out.println();
 
         tempoInicial = System.nanoTime();
-        hashMap.clear();
+        hashSet.clear();
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de todos os elementos em HashMap");
+        System.out.println(" Tempo para remoção de todos os elementos em HashSet");
 
         tempoInicial = System.nanoTime();
-        treeMap.clear();
+        treeSet.clear();
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de todos os elementos em TreeMap");
+        System.out.println(" Tempo para remoção de todos os elementos em TreeSet");
 
         tempoInicial = System.nanoTime();
-        linkedHashMap.clear();
+        linkedHashSet.clear();
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
-        System.out.println(" Tempo para remoção de todos os elementos em LinkedHashMap");
+        System.out.println(" Tempo para remoção de todos os elementos em LinkedHashSet");
+
 
     }
 }
