@@ -14,6 +14,9 @@ public class EqualsHashCode {
         funcionarios.add(new Funcionarios("Willian"));
         funcionarios.add(new Funcionarios("Chaves"));
 
+        long t1 = System.nanoTime();
         System.out.println(funcionarios.contains(new Funcionarios("Willian")));
+        long t2 = System.nanoTime();
+        System.out.println(t2-t1);
     }
 }

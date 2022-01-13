@@ -47,6 +47,34 @@ public class PerformaceLists {
         System.out.println();
 
         tempoInicial = System.nanoTime();
+        arrayList.remove(0);
+        tempoFinal = System.nanoTime();
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.println(" Tempo de remover um elemento no inicio de um ArrayList");
+
+        tempoInicial = System.nanoTime();
+        linkedList.remove(0);
+        tempoFinal = System.nanoTime();
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.println(" Tempo de remover um elemento no inicio de uma LinkedList");
+
+        System.out.println();
+
+        tempoInicial = System.nanoTime();
+        arrayList.remove(999997);
+        tempoFinal = System.nanoTime();
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.println(" Tempo de remover um elemento no fim de um ArrayList");
+
+        tempoInicial = System.nanoTime();
+        linkedList.remove(999997);
+        tempoFinal = System.nanoTime();
+        System.out.print(tempoFinal - tempoInicial);
+        System.out.println(" Tempo de remover um elemento no fim de uma LinkedList");
+
+        System.out.println();
+
+        tempoInicial = System.nanoTime();
         arrayList.get(784520);
         tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
