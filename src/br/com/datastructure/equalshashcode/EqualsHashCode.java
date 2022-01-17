@@ -13,6 +13,18 @@ public class EqualsHashCode {
         funcionarios.add(new Funcionarios("Carlos"));
         funcionarios.add(new Funcionarios("Willian"));
         funcionarios.add(new Funcionarios("Chaves"));
+        funcionarios.add(new Funcionarios("Bia"));
+        funcionarios.add(new Funcionarios("Julia"));
+        funcionarios.add(new Funcionarios("Ruan"));
+        funcionarios.add(new Funcionarios("Diego"));
+        funcionarios.add(new Funcionarios("Roberta"));
+        funcionarios.add(new Funcionarios("Jona"));
+        funcionarios.add(new Funcionarios("Lewis"));
+        funcionarios.add(new Funcionarios("Lando"));
+        funcionarios.add(new Funcionarios("Vettel"));
+        funcionarios.add(new Funcionarios("Gasly"));
+        funcionarios.add(new Funcionarios("George"));
+        funcionarios.add(new Funcionarios("Ster"));
 
         long t1 = System.nanoTime();
         System.out.println(funcionarios.contains(new Funcionarios("Willian")));

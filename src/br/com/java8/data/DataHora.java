@@ -39,9 +39,6 @@ public class DataHora {
         // 06/08/1990 11:40:00 GMT-3 (America/Sao_Paulo)
         ZonedDateTime zdtNow = ZonedDateTime.now();
         System.out.println(zdtNow + " Zoned Date Time" + "\n");
-        ZoneId zoneId = ZoneId.of("North America/New York");
-        ZonedDateTime zdt = ZonedDateTime.of(ld, lt, zoneId);
-        System.out.println(zdt);
 
     }
 }

@@ -22,109 +22,109 @@ public class Main {
         }
 
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.contains(820547);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de busca de um elemento de lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.contains(820547);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de busca de um elemento de pilha");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         queue.contains(820547);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de busca de um elemento de fila");
 
         System.out.println();
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.add(0, 32);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no inicio da lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.add(0, 32);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no inicio da pilha");
 
         System.out.println();
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.add(1000001, 28);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no fim da lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.add(1000001, 28);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no fim da pilha");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         queue.add(5);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no fim da fila");
 
         System.out.println();
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.add(0, 32);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no inicio da lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.add(0, 32);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de adição de um elemento no inicio da pilha");
 
         System.out.println();
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de um elemento de lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de um elemento de pilha");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         queue.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de um elemento de fila");
 
         System.out.println();
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         list.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de todos os elementos de lista");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         stack.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de todos os elementos de pilha");
 
-        tempoInicial = System.currentTimeMillis();
+        tempoInicial = System.nanoTime();
         queue.remove(54726);
-        tempoFinal = System.currentTimeMillis();
+        tempoFinal = System.nanoTime();
         System.out.print(tempoFinal - tempoInicial);
         System.out.println(" Tempo de remoção de todos os elementos de fila");
 

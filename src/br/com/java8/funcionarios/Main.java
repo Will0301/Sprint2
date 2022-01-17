@@ -25,10 +25,16 @@ public class Main {
         System.out.println();
 
         List<Funcionarios> mulheres = funcionarios.stream()
-                .filter(f -> f.getGenero().equals(Genero.FEMININO)).toList();
+                .filter(f -> f.getGenero().equals(Genero.FEMININO))
+                .toList();
         mulheres.forEach(System.out::println);
-        System.out.println();
 
+        Double mediaIdade = funcionarios.stream()
+                .filter(f -> f.getGenero().equals(Genero.FEMININO))
+                .mapToInt(Funcionarios::getIdade)
+                .average()
+                .getAsDouble();
+        System.out.println("\n" + mediaIdade + "Média de idade" + "\n");
 
 
         List<Funcionarios> ordenarIdade = funcionarios.stream()
