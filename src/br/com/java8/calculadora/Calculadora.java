@@ -1,5 +1,7 @@
 package br.com.java8.calculadora;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Calculadora<T extends Number> {
 
     private T numero;
@@ -8,23 +10,23 @@ public class Calculadora<T extends Number> {
         this.numero = object;
     }
 
-    public Double soma(Calculadora<?> num){
+    public Double soma(@NotNull Calculadora<?> num){
         return Math.abs(numero.doubleValue()) + Math.abs(num.numero.doubleValue());
     }
 
-    public Double subtrai(Calculadora<?> num){
+    public Double subtrai(@NotNull Calculadora<? extends Number> num){
         return Math.abs(numero.doubleValue()) - Math.abs(num.numero.doubleValue());
     }
 
-    public Double divide(Calculadora<?> num){
+    public Double divide(@NotNull Calculadora<?> num){
         return Math.abs(numero.doubleValue()) / Math.abs(num.numero.doubleValue());
     }
 
-    public Double multiplica(Calculadora<?> num){
+    public Double multiplica(@NotNull Calculadora<?> num){
         return Math.abs(numero.doubleValue()) * Math.abs(num.numero.doubleValue());
     }
 
-    public Double square(Calculadora<?> num){
+    public Double square(Calculadora<? extends Number> num){
         return Math.abs(numero.doubleValue()) * Math.abs(numero.doubleValue());
     }
 

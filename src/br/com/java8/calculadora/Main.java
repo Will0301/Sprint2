@@ -8,5 +8,6 @@ public class Main {
         Calculadora<Double> num2 = new Calculadora<>(8.0);
 
         System.out.print(num1.multiplica(num2) +"\n"+ num2.divide(num1));
+        System.out.print(num1.soma(num2) +"\n"+ num2.divide(num1));
     }
 }
