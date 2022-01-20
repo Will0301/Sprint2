@@ -1,6 +1,5 @@
 package br.com.java8.login;
 
-import java.util.Locale;
 
 public class Main {
 

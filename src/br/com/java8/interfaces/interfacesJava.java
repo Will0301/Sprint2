@@ -1,16 +1,17 @@
 package br.com.java8.interfaces;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;
 
 public class interfacesJava {
 
-    static LocalDateTime hoje;
+    static LocalDate hoje = LocalDate.now();
 
     public static void main(String[] args) {
-        hoje = LocalDateTime.now();
+
         Pessoa p1 = new Pessoa("Willian", 19);
         Pessoa p2 = new Pessoa("Ana", 8);
         Pessoa p3 = new Pessoa("Carlos", 47);
@@ -49,7 +50,7 @@ public class interfacesJava {
 
         //BiFunction -> Dois parametros e um retorno
         BiFunction<Double, Double, String> maiorNumero=
-                (n1, n2) -> n1 > n2 ? n1 + " é maior que " + n2 : n2 + "é maior que " + n1;
+                (n1, n2) -> n1 > n2 ? n1 + " é maior que " + n2 : n2 + " é maior que " + n1;
 
         System.out.println(maiorNumero.apply(8.0, 80.0));
 

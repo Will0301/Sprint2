@@ -1,7 +1,7 @@
 package br.com.java8.data;
 
 import java.time.*;
-import java.time.temporal.ChronoUnit;
+import java.time.format.DateTimeFormatter;
 
 public class DataHora {
 
@@ -10,6 +10,7 @@ public class DataHora {
         // LocalDate - representa uma data: 06/08/1990
         LocalDate ldNow = LocalDate.now();
         System.out.println(ldNow + " Local Date" + "\n");
+        System.out.println(ldNow.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + " Format");
 
         LocalDate ld = LocalDate.of(1990, Month.AUGUST, 6);
         System.out.println(ld + "\n");
@@ -22,7 +23,7 @@ public class DataHora {
         LocalTime ltNow = LocalTime.now();
         System.out.println(ltNow + " Local Time" + "\n");
 
-        LocalTime lt = LocalTime.of(11, 10, 01, 100000);
+        LocalTime lt = LocalTime.of(11, 10, 1, 100000);
         System.out.println(lt + "\n");
 
 
